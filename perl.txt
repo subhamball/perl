@@ -1,0 +1,1 @@
+$_ is a special variable known as the default or implicit variable

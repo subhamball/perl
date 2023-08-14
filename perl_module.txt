@@ -1,0 +1,12 @@
+The first thing comes to your mind is the module name e.g., FileLogger. The main functionality of the FileLogger module is to:
+
+Open the log file.
+Write log messages to the log file based on log level.
+Close the log file.
+To create  FileLogger module, you need to do the following steps:
+
+First, create your own module name, in this case, you call it FileLogger.
+Second, create a file named modulename.pm. In this case, you need to create a new file named  FileLogger.pm. pm stands for Perl module.
+Third, make the FileLogger module a package by using the syntax:  package FileLogger; at the top of the  FileLogger.pm file.
+Fourth, write the code for subroutines and variables, and put the code into the  FileLogger.pm file.
+Fifth, put the last statement in the  FileLogger.pm file: 1; to make the file returns true.

@@ -1,46 +1,63 @@
-#string declaretion
-my $str1 = "string with double quotes";
-my $str2 = 'string with single quotes';
+#!/user/bin?perl
 
-#print
-print($str1, "\n");
-print($str2, "\n");
+$str1 = "subham";
+$str2 = "ball";
 
-#length
-print(length($str1),"\n");
+#cancatenation of two string
+$str3 = $str1.$str2;
+print "$str3\n";
 
-#upper and lowercase
-print(uc($str1),"\n");
-print(lc($str2),"\n");
+#repetation of string
+$str4 = $str3 x 3;
+print "$str4\n";
 
-#search for a sub string
-my $sub = "quotes";
-my $p = index($str1,$sub);
-print("the substring $sub found at position $p in string $str1 \n");
+#perl single quote
+print 'hi, this is @str1\n';
 
-#modify substring inside a string
-my $str3 = "Hello, world";
-my $sub1 = "Earth";
-my $index = index($str3, "world");
-print($index,"\n");
+#perl double quote
+print "\n";
+print "hi, this is @str1\n";
 
-if ($index != -1) {
-    substr($str3,$index,length("world"),$sub1);
+#perl substring print
+$str5 = "Hi, this is subham ball and i am from kolkata.";
+print "$str5\n";
+$str6 = substr($str5,4); # ofset of 4
+print "$str6\n";
+$str7 = substr($str5,4,14); #ofset of 4, length 15
+print "$str7\n";
+$str8 = substr($str5,4,20, "you and me"); # Replacing length with the new string 
+print "$str5\n";
+
+#Perl String Comparison 
+if($str1 eq $str2){
+    print "Match\n";
 }
-print($str3,"\n");
+else{
+    print "Not Match\n";
+}
 
-#replace substring
-my $str4 = "hi, this is subham from dept. of computer science";
-$str4 =~ s/dept./department/;
-print($str4,"\n");
+#Perl Determining String Length
+print "string length is : ",length($str1),"\n";
 
-#reverse string
-$str5 = reverse $str4;
-print($str5,"\n");
+#Perl Replacing a string with another string
+$str9 = "Red roses are very popular. Yellow roses are less seen."; 
+$str9 =~ s/Red/Blue/;
+print "$str9\n";
+$str9 =~ s/Red/Blue/g;
+print "$str9\n";
 
-#concatenaion of strings(. is a concatenation operator)
-$str6 = $str1 . $str2;
-print($str6,"\n");
+#Perl Finding a match in the string
+if($str9 =~ /roses/){
+    print "match\n";
+}
+else{
+    print "not match\n";
+}
 
-#repeation of string
-print($str1 x 2);
+#displaying email address
+$str10 = "iamsubham1\@gmail.com";
+print "$str10\n";
+
+#Perl Escaping Escape Character
+print "The \\n is a new line chracter in programming languages.\n"; 
+

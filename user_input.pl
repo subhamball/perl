@@ -1,3 +1,5 @@
-print("enter your name : ");
-my $name = <STDIN>;
-print($name,"\n");
+#!/user/bin/perl
+
+print "Enter your name: ";
+$name = <STDIN>;
+print "Your name is $name";

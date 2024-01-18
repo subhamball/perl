@@ -1,13 +1,17 @@
-$x = 10;
-$y = 20;
+#!/user/bin/perl
 
-$z = $x + $y;
-print($z);
-{
-    $z = 50;
-    print($z);
-}
-print($z);
+#global veriable
+$num1;
 
-$color = 'red';
-print("\nyour favorite color is : $color\n");
+#defining function
+sub add{
+    
+    #local veriable
+    $num2;
+    print $num1 + $num2,"\n";
+    }
+
+$num1 =10;
+$num2 = 20;
+#calling function
+add();
